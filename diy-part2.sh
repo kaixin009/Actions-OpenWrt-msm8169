@@ -17,4 +17,5 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
 
 # 安装ssr
+rm -rf  feeds/luci/applications/luci-app-ssr-plus
 git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
