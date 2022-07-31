@@ -16,10 +16,6 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 # 安装Docker
 svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
 
-# 删除原来的ssr
-#rm -rf  feeds/luci/applications/luci-app-ssr-plus
-git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
-
 # 删除原来的argon
 #rm -rf  feeds/luci/themes/luci-theme-argon
 
