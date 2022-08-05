@@ -24,3 +24,6 @@ svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package
 
 # 修改默认主题为argon
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+
+# 添加cpu温度监控
+git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
