@@ -19,13 +19,17 @@ rm -rf  feeds/extra/luci-app-adbyby-plus
 
 
 # 删除docker
-#pushd package/lean
-#rm -rf luci-app-docker
-#popd
+pushd package
+rm -rf luci-lib-docker
+rm -rf luci-app-docker
+rm -rf luci-app-dockerman
+rm -rf luci-theme-argon
+rm -rf luci-app-sfe
+popd
 
-rm -rf feeds/extra/luci-lib-docker
-rm -rf feeds/extra/luci-app-docker
-rm -rf feeds/extra/luci-app-dockerman
+#rm -rf feeds/extra/luci-lib-docker
+#rm -rf feeds/extra/luci-app-docker
+#rm -rf feeds/extra/luci-app-dockerman
 
 # 安装Docker
 #svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
@@ -35,7 +39,7 @@ rm -rf feeds/extra/luci-app-dockerman
 
 
 # 删除原来的argon
-rm -rf  feeds/extra/luci-theme-argon
+#rm -rf  feeds/extra/luci-theme-argon
 
 # 添加老竭力的argon主题
 git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
