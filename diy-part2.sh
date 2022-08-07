@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.50.2/g' package/base-files/files/bin/config_generate
 
 # 安装Docker
 #svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
@@ -19,18 +19,18 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 rm -rf feeds/luci/collections/luci-lib-docker
 rm -rf feeds/luci/applications/luci-app-docker
 rm -rf feeds/luci/applications/luci-app-dockerman
-#git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
-#git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
 
 # 删除原来的argon
-#rm -rf  feeds/luci/themes/luci-theme-argon
+rm -rf  feeds/luci/themes/luci-theme-argon
 
 # 添加老竭力的argon主题
-#git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 # 修改默认主题为argon
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 添加cpu温度监控
 git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
