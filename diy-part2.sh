@@ -16,23 +16,23 @@ sed -i 's/192.168.1.1/192.168.50.2/g' package/base-files/files/bin/config_genera
 
 
 # 删除docker
-pushd package/lean
-rm -rf luci-app-docker
-popd
+#pushd package/lean
+#rm -rf luci-app-docker
+#popd
 
-#rm -rf feeds/luci/collections/luci-lib-docker
-#rm -rf feeds/luci/applications/luci-app-docker
-#rm -rf feeds/luci/applications/luci-app-dockerman
+rm -rf extra/luci-lib-docker
+rm -rf extra/luci-app-docker
+rm -rf extra/luci-app-dockerman
 
 # 安装Docker
 #svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
 
-git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
-git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
+git clone https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
 
 
 # 删除原来的argon
-rm -rf  feeds/luci/themes/luci-theme-argon
+rm -rf  extra/luci-theme-argon
 
 # 添加老竭力的argon主题
 git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
