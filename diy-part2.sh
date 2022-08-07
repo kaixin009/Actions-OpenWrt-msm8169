@@ -13,12 +13,20 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.50.2/g' package/base-files/files/bin/config_generate
 
+
+
+# 删除docker
+pushd package/lean
+rm -rf luci-app-docker
+popd
+
+#rm -rf feeds/luci/collections/luci-lib-docker
+#rm -rf feeds/luci/applications/luci-app-docker
+#rm -rf feeds/luci/applications/luci-app-dockerman
+
 # 安装Docker
 #svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
 
-rm -rf feeds/luci/collections/luci-lib-docker
-rm -rf feeds/luci/applications/luci-app-docker
-rm -rf feeds/luci/applications/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
