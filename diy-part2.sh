@@ -19,8 +19,8 @@ svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-adbyby-plus pa
 
 
 # 删除docker
-rm -rf feeds/luci-lib-docker
-rm -rf feeds/luci-app-docker
+#rm -rf feeds/luci-lib-docker
+#rm -rf feeds/luci-app-docker
 rm -rf feeds/luci/applications/luci-app-dockerman
 
 # 安装Docker
