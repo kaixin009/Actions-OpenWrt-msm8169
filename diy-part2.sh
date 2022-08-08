@@ -19,8 +19,8 @@ svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-adbyby-plus pa
 
 
 # 删除docker
-#rm -rf feeds/luci-lib-docker
-#rm -rf feeds/luci-app-docker
+#rm -rf feeds/extra/luci-lib-docker
+#rm -rf feeds/extra/luci-app-docker
 rm -rf feeds/luci/applications/luci-app-dockerman
 
 # 安装Docker
@@ -31,3 +31,4 @@ git clone https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
 
 # 添加cpu温度监控
 git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
+rm -rf package/luci-app-temp-status/po
