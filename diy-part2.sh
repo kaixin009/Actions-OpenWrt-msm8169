@@ -14,8 +14,12 @@
 sed -i 's/192.168.1.1/192.168.50.2/g' package/base-files/files/bin/config_generate
 
 # 删除原来的adbyby
-rm -rf  feeds/extra/luci-app-adbyby-plus
-svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-adbyby-plus package/lean/luci-app-adbyby-plus
+#rm -rf  feeds/extra/luci-app-adbyby-plus
+svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-adbyby-plus package/luci-app-adbyby-plus
+
+svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-diskman package/luci-app-diskman
+
+svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-autoreboot package/luci-app-autoreboot
 
 
 # 删除docker
