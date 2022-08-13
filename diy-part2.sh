@@ -27,7 +27,7 @@ sed -i 's/192.168.1.1/192.168.50.2/g' package/base-files/files/bin/config_genera
 # 删除docker
 #rm -rf feeds/extra/luci-lib-docker
 #rm -rf feeds/extra/luci-app-docker
-#rm -rf feeds/luci/applications/luci-app-dockerman
+rm -rf feeds/luci/applications/luci-app-dockerman
 
 # 安装Docker
 #svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
