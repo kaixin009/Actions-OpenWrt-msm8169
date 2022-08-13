@@ -29,6 +29,8 @@ sed -i 's/192.168.1.1/192.168.50.2/g' package/base-files/files/bin/config_genera
 #rm -rf feeds/extra/luci-app-docker
 rm -rf feeds/luci/applications/luci-app-dockerman
 
+git clone https://github.com/shidahuilang/openwrt-package.git package/openwrt-package
+
 # 安装Docker
 #svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
 
