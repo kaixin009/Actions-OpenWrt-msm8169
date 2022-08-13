@@ -10,7 +10,7 @@ src-git handsomefeed https://github.com/HandsomeMod/handsomefeed.git
 #src-git extra https://github.com/HandsomeMod/extra.git
 
 # 大灰狼 Feeds
-src-git openwrt-package https://github.com/shidahuilang/openwrt-package.git;master
+src-git dahuilang https://github.com/shidahuilang/openwrt-package.git;master
 
 # Xorg Feeds (WIP)
 src-git xorg https://github.com/HandsomeMod/xorg.git
