@@ -46,5 +46,5 @@ git clone https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
 # 添加cpu温度监控
 git clone https://github.com/AK201314/luci-app-temp-status.git package/luci-app-temp-status
 
-mv package/WiFiPortal/eqos-master-wiwiz/files/po/zh-cn package/WiFiPortal/eqos-master-wiwiz/files/po/zh_Hans
+#mv package/WiFiPortal/eqos-master-wiwiz/files/po/zh-cn package/WiFiPortal/eqos-master-wiwiz/files/po/zh_Hans
 
